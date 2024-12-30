@@ -138,7 +138,7 @@ const Home = () => {
               </Button>
               <hr />
               <Button type="primary" onClick={cancelEditing}>
-                Add
+                Cancel
               </Button>
             </div>
           )}
