@@ -4,29 +4,25 @@ nav {
   font-style: italic;
   align-items: center;
   justify-content: space-around;
-  background-color: #02bac0;
+  background-color: #cecece;
   border-radius: 10px;
   color: rgb(0, 0, 0);
-  color: white;
+  color: black;
   font-size: 20px;
 }
 .navbar > ul {
-  color: white;
+  color: rgb(0, 0, 0);
   list-style: none;
   display: flex;
   flex-direction: row;
   gap: 3em;
 }
 ul > li a {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
-}
-
-ul > li a:hover {
-  color: #ffcc00;
 }
 
 ul > li:hover {
   cursor: pointer;
-  color: #ffcc00;
+  color: #ffffff;
 }

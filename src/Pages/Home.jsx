@@ -1,6 +1,7 @@
 import { React, useState } from "react";
 // import ShowUser from "./ShowUser";
 import { v4 as uuid } from "uuid";
+import { Button, Flex } from "antd";
 
 const Home = () => {
   //Creating a State Variable to store the data's
@@ -123,27 +124,27 @@ const Home = () => {
           />
           <br />
           {buttonState === "add" ? (
-            <button
+            <Button
+              type="primary"
               title="Enter the Details & Click to add a user"
               onClick={addData}
-              disabled={
-                !userInfo.name ||
-                !userInfo.age ||
-                !userInfo.email ||
-                !userInfo.phone
-              }
             >
               Add
-            </button>
+            </Button>
           ) : (
             <div>
-              <button onClick={updateData}>Update</button>
+              <Button type="primary" onClick={updateData}>
+                Update
+              </Button>
               <hr />
-              <button onClick={cancelEditing}>Cancel</button>
+              <Button type="primary" onClick={cancelEditing}>
+                Add
+              </Button>
             </div>
           )}
         </div>
       </div>
+
       <div className="datatable">
         <div className="container">
           <table>
